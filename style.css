@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(-45deg, #d0f0c0, #a8ddb5, #b9e0a5, #c7edcc);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #2f4f2f; 
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  
+  header {
+    background-color: rgba(34, 85, 34, 0.95);
+    color: white;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    color: #b2d8b2; 
+    text-decoration: underline;
+  }
+  
+  
+  main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: rgba(240, 255, 240, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+  }
+  
+  main h1 {
+    font-size: 2rem;
+    color: #2f4f2f;
+    margin-bottom: 1rem;
+  }
+  
+  main p, main li {
+    font-size: 1.1rem;
+  }
+  
+  
+  footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(34, 85, 34, 0.95);
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+    padding: 2rem;
+    background: #f8fff8;
+    border: 1px solid #c4e1c1;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+  }
+  
+  form label {
+    font-weight: 600;
+    color: #2f4f2f;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #a8ddb5;
+    border-radius: 6px;
+    width: 100%;
+  }
+  
+  textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  
+  button {
+    padding: 12px;
+    background-color: #2f4f2f;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #4a6b4a;
+  }
+  
+  
+  a {
+    color: #2f4f2f;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #7bb57b;
+  }
+  
+  
+  @media (max-width: 600px) {
+    nav ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    main {
+      margin: 1rem;
+      padding: 1rem;
+    }
+  
+    form {
+      padding: 1rem;
+    }
+  }
+  
